@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Center Park</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <h1>Center Park</h1>
+    <p>informe os dados do veiculo</p>
+
+    <form action="calcular.php" method="post">
+        <table>
+            <tr>
+                <th colspan="2">tipo de veiculo</th>
+            </tr>
+            <tr>
+                <td><label><input type="radio" name="veiculo" value="carro" required> carro</label></td>
+                <td>R$ 8,00 / hora</td>
+            </tr>
+            <tr>
+                <td><label><input type="radio" name="veiculo" value="moto"> moto</label></td>
+                <td>R$ 5,00 / hora</td>
+            </tr>
+            <tr>
+                <td><label><input type="radio" name="veiculo" value="suv"> SUV</label></td>
+                <td>R$ 12,00 / hora</td>
+            </tr>
+            <tr>
+                <td><label><input type="radio" name="veiculo" value="caminhonete"> caminhonete</label></td>
+                <td>R$ 15,00 / hora</td>
+            </tr>
+            <tr>
+                <th>horas no estacionamento</th>
+                <td><input type="number" name="horas" min="1" value="1" required></td>
+            </tr>
+        </table>
+
+        <button type="submit">calcular</button>
+    </form>
+
+</body>
+</html>

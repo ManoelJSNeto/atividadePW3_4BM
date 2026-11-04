@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>caixa eletronico</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <h1>caixa eletronico</h1>
+    <p>informe seu saldo para comecar</p>
+
+    <form action="caixa.php" method="post">
+        <table>
+            <tr>
+                <th>saldo inicial (R$)</th>
+                <td><input type="number" name="saldo" min="0.01" step="0.01" required></td>
+            </tr>
+        </table>
+
+        <button type="submit">entrar</button>
+    </form>
+
+</body>
+</html>
